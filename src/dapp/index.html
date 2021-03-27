@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#" style="font-style: italic;">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+        <div class="text-center border border-light p-5">
+            <p class="h4 mb-4" style="margin-top: 20px; font-size: 26px;">Flight Surety Insurance</p>
+            <p>Purchase flight surety insurance for any of the flights listed below for 1 ether.</p>
+
+            <div class="row top-20">
+                <select id="flight-number" class="browser-default custom-select custom-select-lg mb-3">
+                    <option value="BR01" selected="selected">BRN Airways - BR01</option>
+                    <option value="BR02">BRN Airways - BR02</option>
+                    <option value="BR03">BRN Airways - BR03</option>
+                    <option value="BR04">BRN Airways - BR04</option>
+                    <option value="BR05">BRN Airways - BR05</option>
+                    <option value="BR06">BRN Airways - BR06</option>
+                    <option value="BR07">BRN Airways - BR07</option>
+                    <option value="BR08">BRN Airways - BR08</option>
+                    <option value="BR09">BRN Airways - BR09</option>
+                    <option value="BR10">BRN Airways - BR10</option>
+                </select>
+            </div>
+
+            <btn class="btn btn-primary btn-lg" id="submit-buy">Buy Insurance</btn>
+            <btn class="btn btn-primary btn-lg" id="submit-oracle">Simulate Delay</btn>
+            <btn class="btn btn-secondary btn-lg" id="submit-credit">Check Credit</btn>
+            <btn class="btn btn-success btn-lg" id="submit-withdrawl">Withdraw</btn>
+        </div>
+
+        <div class="text-center border border-light p-5 mt-5" style="margin-top: 10px!important; padding-top: 10px!important;">
+            <p class="h4 mb-4">Passenger Credit</p>
+            <p>The passengers credit balance below is displayed for testing purposes only.</p>
+            
+            <form>
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-2">
+                        <label for="creditBalance">Passenger Credit</label>
+                    </div>
+                    <div class="col-md-auto">
+                        <input type="text" style="width: 220px;" readonly id="creditBalance">
+                    </div>
+                </div>
+            </form> 
+        </div>
+
+        <div class="text-center border border-light p-5 mt-5" style="margin-top: 10px!important; padding-top: 10px!important;">
+            <p class="h4 mb-4">Transaction Audit Log</p>
+            <div id="display-wrapper"></div>
+        </div>
+    </main>
+
+</body>
+
+</html>
