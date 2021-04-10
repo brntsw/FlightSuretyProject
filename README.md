@@ -13,6 +13,7 @@ FlightSurety is a sample application project for Udacity's Blockchain course.
 
 **Installing**
 -   npm install
+-   npm install @babel/plugin-proposal-class-properties --save-dev
 
 **Truffle**
 -   truffle develop
